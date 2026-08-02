@@ -4,6 +4,9 @@
         <img [src]="homeDetails()?.photo" alt="House Image">
         <h2>{{homeDetails()?.name}}</h2>
         <p>{{homeDetails()?.city}}</p>
+        <a [routerLink]="['/overview', homeDetails()?.id]">
+            Learn More
+        </a>
     </section>
 
 </div>

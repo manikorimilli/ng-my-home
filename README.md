@@ -7,3 +7,5 @@
 - Components in Angular
 
 - Customizing components and directives
+
+- Routing in the Angular
