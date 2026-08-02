@@ -1,1 +1,9 @@
-<p>homes-list works!</p>
+<div class="house-list-container">
+
+    <section>
+        <img [src]="homeDetails()?.photo" alt="House Image">
+        <h2>{{homeDetails()?.name}}</h2>
+        <p>{{homeDetails()?.city}}</p>
+    </section>
+
+</div>

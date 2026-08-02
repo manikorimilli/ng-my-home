@@ -1,10 +1,31 @@
-.app-container{
-    padding:10px;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.app-container header{
-    padding:5px;
-    border:1px solid black;
-    
+.app-container {
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.app-container header {
+    height: 70px;
+    padding: 0 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.app-container header img {
+    height: 40px;
+    width: auto;
+}
+
+.app-container section {
+    width: 100%;
 }

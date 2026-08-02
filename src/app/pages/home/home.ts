@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HomesList } from "../homes-list/homes-list"
+import { HomeModel } from '../../models/home.mode';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,109 @@ import { HomesList } from "../homes-list/homes-list"
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home { }
+export class Home {
+
+  homeDetailsList: HomeModel[] = [
+    {
+      id: 0,
+      name: 'Acme Fresh Start Housing',
+      city: 'Chicago',
+      state: 'IL',
+      photo: 'https://picsum.photos/seed/house1/600/400',
+      availableUnits: 4,
+      wifi: true,
+      laundry: true
+    },
+    {
+      id: 1,
+      name: 'A113 Transitional Housing',
+      city: 'Santa Monica',
+      state: 'CA',
+      photo: 'https://picsum.photos/seed/house2/600/400',
+      availableUnits: 0,
+      wifi: false,
+      laundry: true
+    },
+    {
+      id: 2,
+      name: 'Warm Beds Housing Support',
+      city: 'Juneau',
+      state: 'AK',
+      photo: 'https://picsum.photos/seed/house3/600/400',
+      availableUnits: 1,
+      wifi: false,
+      laundry: false
+    },
+    {
+      id: 3,
+      name: 'Homesteady Housing',
+      city: 'Chicago',
+      state: 'IL',
+      photo: 'https://picsum.photos/seed/house4/600/400',
+      availableUnits: 1,
+      wifi: true,
+      laundry: false
+    },
+    {
+      id: 4,
+      name: 'Happy Homes Group',
+      city: 'Gary',
+      state: 'IN',
+      photo: 'https://picsum.photos/seed/house5/600/400',
+      availableUnits: 1,
+      wifi: true,
+      laundry: false
+    },
+    {
+      id: 5,
+      name: 'Hopeful Apartment Group',
+      city: 'Oakland',
+      state: 'CA',
+      photo: 'https://picsum.photos/seed/house6/600/400',
+      availableUnits: 2,
+      wifi: true,
+      laundry: true
+    },
+    {
+      id: 6,
+      name: 'Seriously Safe Towns',
+      city: 'Oakland',
+      state: 'CA',
+      photo: 'https://picsum.photos/seed/house7/600/400',
+      availableUnits: 5,
+      wifi: true,
+      laundry: true
+    },
+    {
+      id: 7,
+      name: 'Hopeful Housing Solutions',
+      city: 'Oakland',
+      state: 'CA',
+      photo: 'https://picsum.photos/seed/house8/600/400',
+      availableUnits: 2,
+      wifi: true,
+      laundry: true
+    },
+    {
+      id: 8,
+      name: 'Seriously Safe Towns',
+      city: 'Oakland',
+      state: 'CA',
+      photo: 'https://picsum.photos/seed/house9/600/400',
+      availableUnits: 10,
+      wifi: false,
+      laundry: false
+    },
+    {
+      id: 9,
+      name: 'Capital Safe Towns',
+      city: 'Portland',
+      state: 'OR',
+      photo: 'https://picsum.photos/seed/house10/600/400',
+      availableUnits: 6,
+      wifi: true,
+      laundry: true
+    }
+  ]
+
+}

@@ -1,0 +1,39 @@
+.home-container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Search Section */
+.home-container form {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.home-container input {
+    width: 300px;
+    padding: 10px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+.home-container button {
+    padding: 10px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #1976d2;
+    color: white;
+}
+
+/* Cards Section */
+.home-container section:last-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 24px;
+    justify-items: center;
+}

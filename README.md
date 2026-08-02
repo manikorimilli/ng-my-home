@@ -5,3 +5,5 @@
 - Getting started with Angular
 
 - Components in Angular
+
+- Customizing components and directives
