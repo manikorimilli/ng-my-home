@@ -7,7 +7,7 @@
     </section>
 
     <section>
-        @for (homeDetail of homeDetailsList; track homeDetail.id) {
+        @for (homeDetail of homeDetailsList(); track homeDetail.id) {
         <app-homes-list [homeDetails]="homeDetail">
         </app-homes-list>
         }

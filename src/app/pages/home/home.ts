@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { HomesList } from "../homes-list/homes-list"
 import { HomeModel } from '../../models/home.mode';
 import { HomeService } from '../../services/home-service';
@@ -11,13 +11,15 @@ import { HomeService } from '../../services/home-service';
 })
 export class Home {
 
-  homeDetailsList: HomeModel[] = []
+  homeDetailsList = signal<HomeModel[]>([])
 
   homeService = inject(HomeService)
 
   constructor() {
-    this.homeDetailsList = this.homeService.getHomeDetailsList()
+    this.homeService.getHomeDetailsList().then((list) => {
+      this.homeDetailsList.set(list)
 
+    })
   }
 
 }

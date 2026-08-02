@@ -32,9 +32,11 @@ export class Overview {
   constructor() {
     this.overviewId = Number(this.route.snapshot.paramMap.get('id'));
 
-    const home = this.homeService.getHomeDetailsById(this.overviewId);
 
-    this.homeServiceDetails.set(home);
+
+    this.homeService.getHomeDetailsById(this.overviewId).then(homeServiceDetails => {
+      this.homeServiceDetails.set(homeServiceDetails)
+    })
 
 
   }

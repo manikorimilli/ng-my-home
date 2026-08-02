@@ -13,3 +13,9 @@
 - Services in the Angular
 
 - Forms in Angular (Reactive Form Module)
+
+- HTTP in Angular 
+  - npm i -g json-server
+  - db.json (file creation)
+  - json-server --watch db.json
+  
