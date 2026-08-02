@@ -12,5 +12,22 @@
 
     </section>
 
+    <section>
+        <form [formGroup]="applyForm" (submit)="submitApplication()">
+            <label>First Name</label>
+            <input type="text" formControlName="firstName" />
+
+            <label>Last Name</label>
+            <input type="text" formControlName="lastName" />
+
+            <label>Email</label>
+            <input type="text" formControlName="email" />
+
+            <button type="submit">Apply Now</button>
+
+
+        </form>
+    </section>
+
 
 </div>

@@ -117,4 +117,10 @@ export class HomeService {
     getHomeDetailsById(Id: Number): HomeModel | undefined {
         return this.homeDetailsList.find(home => home.id === Id)
     }
+
+    submitApplication(firstName: string, lastName: string, email: string) {
+        console.log(firstName);
+        console.log(lastName);
+        console.log(email)
+    }
 }

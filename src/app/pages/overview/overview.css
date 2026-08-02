@@ -1,73 +1,109 @@
 .overview {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 24px;
     display: flex;
-    gap: 32px;
-    align-items: flex-start;
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
+    flex-wrap: wrap;
+    gap: 24px;
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* Image Section */
 .overview section:first-child {
-    flex: 1;
+    flex: 1 1 400px;
 }
 
 .overview img {
     width: 100%;
-    max-width: 380px;
-    height: 280px;
+    height: 320px;
     object-fit: cover;
     border-radius: 10px;
-    display: block;
 }
 
 /* Details Section */
-.overview section:last-child {
-    flex: 1;
+.overview section:nth-child(2) {
+    flex: 1 1 250px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    justify-content: center;
+    gap: 10px;
 }
 
 .overview h2 {
     margin: 0;
     font-size: 2rem;
-    color: #1f2937;
+    color: #222;
 }
 
 .overview h3,
 .overview h4 {
     margin: 0;
-    color: #6b7280;
+    color: #666;
     font-weight: 500;
 }
 
-.overview h3 {
-    font-size: 1.2rem;
+/* Form Section */
+.overview section:nth-child(3) {
+    width: 100%;
 }
 
-.overview h4 {
-    font-size: 1rem;
+.overview form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 24px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.overview label {
+    font-weight: 600;
+    color: #333;
+}
+
+.overview input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.overview input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.overview button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.overview button:hover {
+    background: #1d4ed8;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
     .overview {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
     }
 
     .overview img {
-        max-width: 100%;
-        height: auto;
+        height: 250px;
     }
 
-    .overview section:last-child {
-        align-items: center;
+    .overview section:nth-child(2) {
+        text-align: center;
     }
 }

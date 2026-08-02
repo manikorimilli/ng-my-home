@@ -11,3 +11,5 @@
 - Routing in the Angular
 
 - Services in the Angular
+
+- Forms in Angular (Reactive Form Module)
