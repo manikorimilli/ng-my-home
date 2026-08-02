@@ -1,3 +1,16 @@
 <div class="overview">
-    The overview Id is {{overviewId}}
+
+    <section>
+        <img [src]="homeServiceDetails()?.photo" />
+
+    </section>
+
+    <section>
+        <h2>{{homeServiceDetails()?.name}}</h2>
+        <h3>{{homeServiceDetails()?.city}}</h3>
+        <h4>{{homeServiceDetails()?.state}}</h4>
+
+    </section>
+
+
 </div>

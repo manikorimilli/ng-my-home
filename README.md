@@ -9,3 +9,5 @@
 - Customizing components and directives
 
 - Routing in the Angular
+
+- Services in the Angular
